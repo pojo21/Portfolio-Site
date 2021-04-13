@@ -36,3 +36,51 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+img {
+  width: 100%;
+}
+
+a {
+  color: #3F3F3F;
+  text-decoration: none;
+}
+a:visited {
+  color: #FB6072;
+  text-decoration: none;
+}
+a:hover {
+  color: #FB6072;
+  text-decoration: underline;
+}
+a:active {
+  color: #FB6072;
+}
+a:focus {
+  color: #FB6072;
+  text-decoration: underline;
+}
+
+.button{
+  display: inline-block;
+  margin: 25px;
+  background-color: #ffffff;
+  color: #FB6072;
+  font-weight: 400;
+  padding: 10px;
+  border: 2px solid #FB6072;
+  border-radius: 5px;
+  transition: 0.2s opacity;
+}
+.button:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   text-decoration: none;
+}
+
+.button.contact {
+  background-color: #FB6072;
+  color: #FFFFFF;
+}
+
+.button.cv{
+
+}
