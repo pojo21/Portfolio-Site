@@ -46,6 +46,14 @@ img {
   width: 100%;
 }
 
+.logo{
+  max-width: 250px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
 a {
   color: #707070;
   text-decoration: none;
