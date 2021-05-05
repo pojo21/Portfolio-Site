@@ -6,6 +6,15 @@ Dark Color (Black): #202020;
 Terciary Color (Dark Grey): #3F3F3F;
 White (White): #FFFFFF;
 */
+
+*{
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 230px;
+}
+
 body {
   background-color: #707070;
   font-family: 'Roboto', sans-serif;
@@ -19,6 +28,28 @@ header {
   background-color: #3F3F3F;
   padding: 10px;
   margin: 0 auto;
+  border-bottom: 3px solid #202020;
+  text-align: center;
+  box-shadow:         0px 20px 5px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #707070;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4 {
@@ -46,12 +77,72 @@ img {
   width: 100%;
 }
 
-.logo{
+
+
+.logo {
   max-width: 250px;
 }
 
-.container {
+.container{
   padding: 0 15px;
+  text-align: center;
+}
+
+#work .row {
+  padding-bottom: 25px; border-bottom: 1px solid #FB6072;
+}
+
+#hero {
+  background-color: #3F3F3F;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero p {
+  text-align: center;
+  margin: 25px;
+}
+
+#aboutme h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+  position: relative;
+}
+
+#story{
+
+}
+
+.headshot{
+  width: 30%;
+  padding: 10px;
+  float: left;
+}
+
+#skills h2{
+  text-align: center;
+}
+
+#skills h3{
+  padding-left: 30px;
+}
+
+#skills .container{
+  clear: left;
+  display: block;
+  text-align: left;
+}
+
+#skills .row {
+  padding-bottom: 25px;
 }
 
 a {
@@ -97,4 +188,19 @@ a:focus {
 
 .button.cv{
 
+}
+
+#project{
+  text-align: center;
+}
+
+
+footer {
+  display: inline-block;
+  margin: 10px 15px;
+  width: 100%;
+}
+
+footer .socials{
+  max-width: 60px;
 }
