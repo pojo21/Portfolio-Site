@@ -30,7 +30,7 @@ header {
   margin: 0 auto;
   border-bottom: 3px solid #202020;
   text-align: center;
-  box-shadow:         0px 20px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 20px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
 }
@@ -217,4 +217,50 @@ footer {
 .socials svg {
   max-width: 60px;
   max-height: auto;
+}
+
+@media only screen and (min-width: 640px) {
+
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+  }
+  .logo{
+    float:left;
+  }
+
+  body{
+    font-size: 18px;
+
+  }
+  main{
+    padding-top: 175px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+
 }
