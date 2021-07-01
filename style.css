@@ -12,7 +12,7 @@ White (White): #FFFFFF;
 }
 
 main {
-  padding-top: 230px;
+  padding-top: 125px;
 }
 
 body {
@@ -26,22 +26,54 @@ body {
 
 header {
   background-color: #3F3F3F;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 0 auto;
   border-bottom: 3px solid #202020;
-  text-align: center;
   box-shadow: 0px 20px 5px 0px rgba(50, 50, 50, 0.75);
   position: fixed;
   width: 100%;
 }
 
+header .container{
+  text-align: unset;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0;
 }
 
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+
+.navtoggle.responsive nav {
+  padding: 50px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #FB6072;
+  color: #FB6072;
+  text-align: center;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 nav > ul > li > a {
@@ -51,6 +83,7 @@ nav > ul > li > a {
   color: #707070;
   text-decoration: none;
 }
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -80,7 +113,7 @@ img {
 
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 .container{
@@ -274,8 +307,22 @@ footer {
     float: right;
     margin-top: 10px;
   }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   .logo{
     float:left;
+    min-width: 250px;
   }
 
   body{
